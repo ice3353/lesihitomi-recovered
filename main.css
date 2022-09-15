@@ -32,3 +32,18 @@ div {
 	font-family: NanumSquareR;
 	text-align: center;
 }
+a:link {
+	color: #1fb264;
+	text-decoration: none;
+}
+a:hover{
+	color: skyblue;
+}
+a:active{
+	color: blue;
+	text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+	color: skyblue;
+}
