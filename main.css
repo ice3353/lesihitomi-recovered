@@ -47,3 +47,14 @@ a:visited{
 	text-decoration: none;
 	color: skyblue;
 }
+.topal{
+	margin-top: 10rem;
+	font-family: NanumSquareR;
+    text-align: center;
+    color: #35465d;
+    background-color: skyblue;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    margin-left:25px ;
+}
