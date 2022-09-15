@@ -11,20 +11,24 @@
     outline: none;
     text-transform: uppercase;
     font-weight: 700;
-		}
+}
 .btn:hover {
 	background: #1aa059;
 	color: #ffffff;
 	transition: all 0.2s ease;
 	cursor: pointer;
-		}
+}
 .btn:active {
 	border: 0;
 	transition: all 0.2s ease;
-		}
+}
 .title {
     font-family: NanumSquareR;
     line-height: 1.67;
     text-align: center;
     color: #35465d;
-		}
+}
+div {
+	font-family: NanumSquareR;
+	text-align: center;
+}
