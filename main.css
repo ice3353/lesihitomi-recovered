@@ -52,8 +52,9 @@ a:visited{
 	font-family: NanumSquareR;
     text-align: center;
     color: #35465d;
-    background-color: skyblue;
-    border: none;
+    box-shadow: 10px 10px 10px grey;
+    border: solid;
+    border-color:#000C0C;
     border-radius: 5px;
     width: 300px;
     margin-left:20px ;
