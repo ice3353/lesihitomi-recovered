@@ -48,15 +48,15 @@ a:visited{
 	color: skyblue;
 }
 .topal{
-	margin-top: 10rem;
 	font-family: NanumSquareR;
     text-align: center;
+    margin:auto;
     color: #35465d;
     box-shadow: 10px 10px 10px grey;
     border: solid;
     border-color:#000C0C;
     border-radius: 5px;
     width: 300px;
-    margin-left:20px ;
     padding: 10px 0px;
+    display: inline-block;
 }
