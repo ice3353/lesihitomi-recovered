@@ -1,4 +1,4 @@
-.btn {
+.bttn {
 	width: 75%;
     margin: 0;
     color: #fff;
@@ -12,13 +12,13 @@
     text-transform: uppercase;
     font-weight: 700;
 }
-.btn:hover {
+.bttn:hover {
 	background: #1aa059;
 	color: #ffffff;
 	transition: all 0.2s ease;
 	cursor: pointer;
 }
-.btn:active {
+.bttn:active {
 	border: 0;
 	transition: all 0.2s ease;
 }
