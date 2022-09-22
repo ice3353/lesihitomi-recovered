@@ -31,18 +31,18 @@
 div {
 	font-family: NanumSquareR;
 }
-a:link {
+.main a:link {
 	color: #1fb264;
 	text-decoration: none;
 }
-a:hover{
+.main a:hover{
 	color: skyblue;
 }
-a:active{
+.main a:active{
 	color: blue;
 	text-decoration: none;
 }
-a:visited{
+.main a:visited{
 	text-decoration: none;
 	color: skyblue;
 }
