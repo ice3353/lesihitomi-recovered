@@ -18,6 +18,12 @@
 			document.getElementById("conf").style.display='none';
 		},500)
 	}
+	function hiyobi(){
+		var site=document.getElementsByTagName('a')
+		for (var i=0; i<site.length; i++){
+			site[i].href=site[i].href.replace('https://hitomi.la','https://hiyobi.me')
+		}
+	}
 	</script>
 	<title>레시의 히토미 저장소</title>
 	<style>
