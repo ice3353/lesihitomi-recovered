@@ -19,9 +19,17 @@
 		},500)
 	}
 	function hiyobi(){
-		var site=document.getElementsByTagName('a')
-		for (var i=0; i<site.length; i++){
-			site[i].href=site[i].href.replace('https://hitomi.la','https://hiyobi.me')
+		var site=document.getElementsByTagName('a');
+		var himode=document.getElementById('himode').checked;
+		if(himode==true){
+			for (var i=0; i<site.length; i++){
+				site[i].href=site[i].href.replace('https://hitomi.la','https://hiyobi.me');
+			}
+		}
+		if(himode==false){
+			for (var i=0; i<site.length; i++){
+				site[i].href=site[i].href.replace('https://hiyobi.me','https://hitomi.la');
+			}
 		}
 	}
 	</script>
@@ -73,6 +81,10 @@
 	<div style='font_family:Nanum Gothic' class='container main'>
 		<div class="title">
 				<h1><img src="https://ifh.cc/g/wJCQQK.png" width="100%"></h1></div>
+				<div class="form-check form-switch text-center">
+					<input class="form-check-input" type="checkbox" role="switch" id="himode" onclick='hiyobi();'>
+					<label class="form-check-label" for="flexSwitchCheckDefault">히요비 모드</label>
+				</div>
 				<h2 class="text-center">뭉탱이로 묶여져있는 시리즈</h2>
 			<div class="row">
 				<div class="col-8 bg-light rounded">
