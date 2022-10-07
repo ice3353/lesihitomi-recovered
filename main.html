@@ -12,29 +12,7 @@
 	<meta property="og:description" content="건전한 사이트입니다. 성적인 요소는 없습니다">
 	<link rel="stylesheet" href="main.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-	<script>
-	function start() {
-		setTimeout (function() {
-			document.getElementById("conf").style.display='none';
-		},250)
-	}
-	function hiyobi(){
-		var site=document.querySelectorAll('.main a');
-		var himode=document.getElementById('himode').checked;
-		if(himode==true){
-			for (var i=0; i<site.length; i++){
-				site[i].href=site[i].href.replace('https://hitomi.la','https://hiyobi.me');
-				site[i].href=site[i].href.replace('.html','');
-			}
-		}
-		if(himode==false){
-			for (var i=0; i<site.length; i++){
-				site[i].href=site[i].href.replace('https://hiyobi.me','https://hitomi.la');
-				site[i].href=site[i].href+'.html'
-			}
-		}
-	}
-	</script>
+	<link rel="text/javascript" href="main.js">
 	<title>레시의 히토미 저장소</title>
 	<style>
 	@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
