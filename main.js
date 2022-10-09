@@ -1,9 +1,6 @@
 const blockip=['14.47.184.93'];
 function start() {
-	setTimeout (function() {
-		verify();
-		document.getElementById("conf").style.display='none';
-	},250)
+	document.getElementById("conf").style.display='none';
 }
 	function hiyobi(){
 	var site=document.querySelectorAll('.main a');
@@ -27,7 +24,7 @@ function verify() {
 		if(this.status == 200 && this.readyState == this.DONE) {
 			var ip=request.responseText;
 			if(blockip.includes(JSON.parse(ip).ip)){
-				window.location.replace('http://www.google.com');
+				document.getElementById('conf').innerHTML='이 사이트는 폐쇄되었습니다.';
 			}
 		}
 	}
