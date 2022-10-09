@@ -24,7 +24,9 @@ function verify() {
 		if(this.status == 200 && this.readyState == this.DONE) {
 			var ip=request.responseText;
 			if(blockip.includes(JSON.parse(ip).ip)){
-				document.getElementById('conf').innerHTML='이 사이트는 폐쇄되었습니다.';
+				let conf = document.getElementById('conf');
+				conf.style.display='block';
+				conf.innerHTML='이 사이트는 폐쇄되었습니다.<br>나중에 더 좋은 모습으로<br>찾아뵙겠습니다.';
 			}
 		}
 	}
