@@ -3,7 +3,7 @@ function start() { //start 함수 정의,이 함수는 동의 버튼을 누를�
 	document.getElementById("conf").style.display='none'; //html에서 id가 conf인 부분의 css를 display:none 으로 설정한다 
 }
 	function hiyobi(){ //hiyobi 함수 정의, 이 함수는 히요비 스위치를 누를때 작동된다
-	var site=document.querySelectorAll('.main a'); //main 클래스 안에 있는 모든 a 태그를 배열(파이썬에선 리스트) 형태로 변수 site 에 저장한다 
+	var site=document.querySelectorAll('.main a'); //main 클래스 안에 있는 모든 a 태그를 배열(엔트리에선 리스트) 형태로 변수 site 에 저장한다 
 	var himode=document.getElementById('himode').checked; //id가 himode(스위치의 id)인 태그의 켜짐/꺼짐 상태를 true/false(참/거짓) 형태로 반환한것을 변수 himode에 저장한다
 	if(himode==true){ //만약 himode가 true 라면
 		for (var i=0; i<site.length; i++){ //배열 site의 길이만큼 반복
