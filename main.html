@@ -62,6 +62,35 @@
 	<!--body-->
 	<br><br>
 	<div class="title">
+<div style="text-align: center;">
+        <span id="clock" style="color:gray; font-size: 100px;">clock</span>
+        <span id="apm" style="color:gray; font-size: 50px;"  >ampm</span>
+    </div>
+    
+
+    <script>
+        var Target = document.getElementById("clock");
+        var Target_apm = document.getElementById("apm");
+        function clock() {
+            var time = new Date();
+            var hours = time.getHours();
+            var minutes = time.getMinutes();
+            var seconds = time.getSeconds();
+            var AmPm ="AM";
+            if(hours > 12){   
+                var AmPm ="PM";
+                hours %= 12;
+            }
+
+            Target.innerText = 
+            `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+
+            Target_apm.innerText = `${AmPm}`;
+
+        }
+        clock();
+        setInterval(clock, 1000); // 1초마다 실행
+    </script>
 		<h1><!-- img src="https://ifh.cc/g/wJCQQK.png" width="100%"-->작품 추천</h1></div>
 	<div style='font_family:Nanum Gothic' class='container main rounded-lg bg-light'>
 				<div class="form-check form-switch text-center">
