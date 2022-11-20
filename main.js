@@ -9,6 +9,7 @@ function start() { //start 함수 정의,이 함수는 동의 버튼을 누를�
 		for (var i=0; i<site.length; i++){ //배열 site의 길이만큼 반복
 			site[i].href=site[i].href.replace('https://hitomi.la','https://hiyobi.me'); //(반복문이 반복된 횟수)번째 site 요소의 href를 hitomi.la에서 hiyobi.la로 바꾼다
 			site[i].href=site[i].href.replace('.html',''); //(반복문이 반복된 횟수)번째 site 요소의 href부분에서 .html을 없앤다
+			site[i].href=site[i].href.replace('reader','beta/reader);
 		}
 	}
 	if(himode==false){ //만약 himode가 false라면
