@@ -14,6 +14,7 @@ function start() { //start 함수 정의,이 함수는 동의 버튼을 누를�
 	}
 	if(himode==false){ //만약 himode가 false라면
 		for (var i=0; i<site.length; i++){ //배열 site의 길이만큼 반복
+			site[i].href=site[i].href.replace('beta/','');
 			site[i].href=site[i].href.replace('https://hiyobi.me','https://hitomi.la'); //대충 위에꺼 반대로
 			site[i].href=site[i].href+'.html' //(반복문이 반복된 횟수)번째 a태그 요소의 href뒤에 .html을 추가한다
 		}
